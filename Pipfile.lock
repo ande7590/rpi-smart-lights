@@ -1,0 +1,29 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "acdeb5d5b6cb2689129f7172e6cbaf1c733786f8f7f7a00ba9669dff3846c974"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "2.7"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "flux-led": {
+            "hashes": [
+                "sha256:28afd45220cca9a6dfd80484c4cc2dacd5e32b6ff35108fc064135534ec075ba",
+                "sha256:a69b4cbd34362fdc40662863fe8d326f6e036e3dde91bace4600beeba4f89546"
+            ],
+            "index": "pypi",
+            "version": "==0.22"
+        }
+    },
+    "develop": {}
+}
