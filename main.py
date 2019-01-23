@@ -17,9 +17,11 @@ warm_light = (255, 187, 65)
 bed_time = (255, 43, 0)
 
 # Color change schedule
-color_schedule = {3: bed_time, 5: warm_light, 8: cool_bright, 18: warm_bright, 19: warm_light, 20: bed_time}
+color_schedule = {3: bed_time, 5: warm_light, 8: cool_bright,\
+                  18: warm_bright, 19: warm_light, 20: bed_time}
 
 def get_hours_between(t1, t2):
+    """Finds the number of hours between t2 and t1, order matters"""
     if t1 < t2:
         diff = t2 - t1
     else:
@@ -35,7 +37,8 @@ def interpolate_color(t1, color1, t2, color2):
     return tuple(wt * col[0] + (1 - wt) * col[1] for col in zip(color1, color2))
 
 def main():
-
+    """Find lightbulbs on LAN, update their colors according to schedule.  Grade
+        between the colors via linear interpolation"""
     # hack to convert UTC to local time
     if utc_time < utc_offset:
         local_time = 24 - utc_offset + utc_time
