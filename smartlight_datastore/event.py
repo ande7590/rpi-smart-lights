@@ -7,7 +7,6 @@ from config import DB_CONN_STR
 
 SmartLightEventBase = declarative_base()
 
-# https://www.pythoncentral.io/introductory-tutorial-python-sqlalchemy/
 class SmartLightEvent(SmartLightEventBase):
     """Database Entity for representing a lightbulb event""" 
     __tablename__ = 'smartlight_event'

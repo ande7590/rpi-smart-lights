@@ -29,6 +29,3 @@ class SmartLightEventRepository():
         finally:
             self.__inSession = False
             session.close()
-        
-    def getEvents(self, window):
-        pass
