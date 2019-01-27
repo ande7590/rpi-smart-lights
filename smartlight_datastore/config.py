@@ -1,0 +1,1 @@
+DB_CONN_STR = 'sqlite:///event_repository.sqlite'
